@@ -6,7 +6,7 @@ class MessagesController < ApplicationController
   end
 
   def new
-    @message = Message.new
+    @message = current_user.messages.build
   end
 
   def show
@@ -15,7 +15,7 @@ class MessagesController < ApplicationController
   def create
     # create a new instance of a message, require a message object from params and permit
     # a title and a description. If it saves, redirect to the root otherwise render the new page
-    @message = Message.new(message_params)
+    @message = current_user.messages.build(message_params)
     if @message.save
       redirect_to root_path
     else
