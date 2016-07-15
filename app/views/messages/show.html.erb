@@ -6,7 +6,8 @@
     <div class="links btn-group">
       <%= link_to "Back", root_path, class: "btn-custom" %>
       <%= link_to "Edit", edit_message_path(@message), class: "btn-custom" %>
-      <%= link_to "Delete", message_path(@message), method: :delete, data: {confirm: "OMG OMG Holy shit, do you really want to do that?"}, class: "btn-custom" %>
+      <%= link_to "Delete", message_path(@message), method: :delete,
+          data: {confirm: "OMG OMG Holy shit, do you really want to do that?"}, class: "btn-custom" %>
     </div>
   </div>
 </div>
