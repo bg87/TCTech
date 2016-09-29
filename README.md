@@ -6,3 +6,9 @@
 
 * Rails version
   5.0.0
+
+### To run on your machine:
+* download the zip of this project, unpack and open in your editor of choice.
+* run bundle install to install depencies.
+* run rake db:migrate to create your database.
+* run rails s to start your server.
